@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title><%= livroDetalhes.nome %> - info</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+        <section id="details_section">
+            <article id="details_main">
+                <div id="details_img">
+                    <img src="<%= livroDetalhes.img %> " alt="">
+                </div>
+                <h2><%= livroDetalhes.nome %> </h2>
+                
+            </article>
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %> 
+</body>
+</html>
