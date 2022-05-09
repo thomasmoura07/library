@@ -23,7 +23,7 @@ export const getDetalhes = async (req, res) => {
 }
 
 export const getCadastro = (req, res) => {
-   res.status(200).render('cadastro')
+   res.status(200).render('cadastro',{toggle:false})
 }
 
 export const postCadastro = async (req, res) => {
@@ -32,7 +32,7 @@ export const postCadastro = async (req, res) => {
         await biblioteca.create({
             nome,autor,descricao,genero,ano,img
         })
-        res.status(200).redirect('/')
+        res.render('cadastro.ejs',{toggle:true})
     }catch(error) {
         res.send(error.message)
     }

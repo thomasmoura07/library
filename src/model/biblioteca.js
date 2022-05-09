@@ -39,3 +39,13 @@ export const biblioteca = connection.define('biblioteca', {
     timestamps:false
 
 })
+
+const initTable = async () => {
+    try {
+        await biblioteca.sync()
+    }catch(error) {
+        res.send(error.message)
+    }
+}
+
+initTable()

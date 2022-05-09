@@ -60,18 +60,18 @@ section#container_card a{
 section article.cards {
     display: flex;
     height: 400px;
-    width: 350px;
+    width: 250px;
     border:1px solid red;
 }
 article.cards div#card_inner{
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     border:1px solid red;
 }
 article.cards div#card_inner div.card_img{
     display: flex;
     justify-content: center;
-    height: 80%;
+    height: 75%;
 }
 
 article.cards div.card_name {
@@ -82,6 +82,13 @@ article.cards div.card_name {
     border-radius: 8px;
 }
 
+article.cards div.card_name p.info{
+    white-space: nowrap;
+    width: 9.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 article.cards div.card_autor {
     display:flex;
     justify-content: center;
@@ -90,11 +97,26 @@ article.cards div.card_autor {
     border-radius:4px;
 }
 
+article.cards div.card_autor p.info{
+    white-space: nowrap;
+    width: 9.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 article.cards div#card_inner div.card_img img{
     height: 100%;
 }
 main section#container_card {
     display:flex;
+}
+
+
+article.cards div#buttom_card {
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+    margin-left: .6rem;
 }
 
 footer{

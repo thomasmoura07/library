@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/27a7f617e8.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>LIBRARY | HOME</title>
 </head>
 <body>
@@ -16,16 +18,15 @@
                     <article class="cards">
                         <div id="card_inner">
                             <div class="card_img"><img src="<%= element.img %> " alt="Capa do livro <%= element.nome %> "></div>
-                            <div class="card_name"> <%= element.nome %> </div>
-                            <div class="card_autor"> <%= element.autor %> </div>     
+                            <div class="card_name"> <p class="info"><%= element.nome %> </p></div>
+                            <div class="card_autor"> <p class="info"> <%= element.autor %></p> </div>     
                         </div> 
                         <div id="buttom_card">
-                            <i class="fa-solid fa-pen-to-square"></i>
                             <a href="/remove/<%= element.id %> ">
-                                <img class="delete-icon" src="" alt="delete">
+                                <i class="fa-solid fa-trash"></i>
                            </a>
                            <a href="/update/<%= element.id %> ">
-                                <img class="edit-icon" src="" alt="editar">
+                            <i class="fa-solid fa-pen-to-square"></i>
                            </a>
                         </div>              
                     </article>
