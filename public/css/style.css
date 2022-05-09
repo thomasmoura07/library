@@ -53,15 +53,20 @@ section#container_card {
     gap:16px;
 
 }
+section#container_card a{
+    text-decoration: none;
+    color: #613b0b;
+}
 section article.cards {
     display: flex;
     height: 400px;
     width: 350px;
-    border:1px solid 
+    border:1px solid red;
 }
 article.cards div#card_inner{
     height: 90%;
     width: 90%;
+    border:1px solid red;
 }
 article.cards div#card_inner div.card_img{
     display: flex;
@@ -92,12 +97,6 @@ main section#container_card {
     display:flex;
 }
 
-section#container_card article.cards div#button_card{
-    width:10%;
-}
-section#container_card article.cards div#button_card a img.delete-icon{
-    width: 5%;
-}
 footer{
     display:flex;
     justify-content: center;
@@ -119,31 +118,31 @@ footer{
 section#details_section {
     display:flex;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     border: 1px solid red;
     margin-top:50px;
     margin-bottom: 50px;
     background-color: #fff5bf;
 }
 
-section#details_section article#details_main{
+section#details_section article#details_main {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     border: 1px solid rgb(25, 0, 255);
-    height: 100%;
-    width:50%;
+   min-height:100%;
+    min-width:100%;
 }
 
-section#details_section article#details_main div#details_img{
+section#details_section article#details_main div#details_ div#details_img{
     display: flex;
     justify-content: center;
-    width: 300px;
+    width: 40%;
+    height: 40%;
     border: 1px solid rgb(25, 0, 255);
 }
 
-section#details_section article#details_main div#details_img img{
-    height: 100%;
-    width: 100%;
+section#details_section article#details_main div#details_ img{
+    width: 20%;
 }
 
 

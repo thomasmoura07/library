@@ -12,11 +12,15 @@
     <main>
         <section id="details_section">
             <article id="details_main">
-                <div id="details_img">
+                <div id="details_">
                     <img src="<%= livroDetalhes.img %> " alt="">
+                    <h2><%= livroDetalhes.nome %> </h2>
                 </div>
-                <h2><%= livroDetalhes.nome %> </h2>
-                
+                <div id="details_1">
+                    <p>Autor: <%= livroDetalhes.autor %> </p>
+                    <p>Ano: <%= livroDetalhes.ano %> </p>
+                    <p>Descrição: <%= livroDetalhes.descricao %> </p> 
+                </div>
             </article>
         </section>
     </main>
