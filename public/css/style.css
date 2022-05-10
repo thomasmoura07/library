@@ -55,7 +55,7 @@ section#container_card {
 }
 section#container_card a{
     text-decoration: none;
-    color: #613b0b;
+    color: #412707;
 }
 section article.cards {
     display: flex;
@@ -115,6 +115,13 @@ article.cards div#buttom_card {
     flex-direction: column;
     gap:8px;
     margin-left: .6rem;
+}
+
+article.cards div#buttom_card a#remove i:hover{
+    color:red;
+}
+article.cards div#buttom_card a#edit i:hover{
+    color:rgb(71, 104, 223);
 }
 
 footer{
@@ -186,6 +193,10 @@ form{
 form fieldset#field_main{
     width: 60vw;
     height: 60vh;
+}
+form fieldset#field_main legend{
+    display:flex;
+    text-align: center;
 }
 form fieldset{
     border:none;
